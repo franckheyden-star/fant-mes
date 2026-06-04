@@ -129,6 +129,49 @@ function send(){
   socket.emit("message", { text: input.value });
   input.value = "";
 }
+  @media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  #online {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  #chatArea {
+    flex: 1;
+    height: 100%;
+  }
+
+  #chat {
+    height: calc(100vh - 140px);
+  }
+
+  #bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+  }
 </script>
 
 </body>
